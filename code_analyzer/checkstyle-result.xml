@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<checkstyle>
+  <file name='Gemfile'/>
+  <file name='Rakefile'/>
+  <file name='features/services/common.rb'>
+    <error line='1' column='21' severity='error' message='Lint/Syntax: unexpected token tCOLON
+(Using Ruby 2.6 parser; configure using `TargetRubyVersion` parameter, under `AllCops`)' source='com.puppycrawl.tools.checkstyle.Lint/Syntax'/>
+  </file>
+  <file name='features/services/jsonschema.rb'>
+    <error line='1' column='21' severity='error' message='Lint/Syntax: unexpected token tCOLON
+(Using Ruby 2.6 parser; configure using `TargetRubyVersion` parameter, under `AllCops`)' source='com.puppycrawl.tools.checkstyle.Lint/Syntax'/>
+  </file>
+  <file name='features/step_definitions/rickmorty.rb'/>
+  <file name='features/support/env.rb'/>
+  <file name='gems.gemspec'/>
+  <file name='spec/spec_helper.rb'>
+    <error line='1' column='21' severity='error' message='Lint/Syntax: unexpected token tCOLON
+(Using Ruby 2.6 parser; configure using `TargetRubyVersion` parameter, under `AllCops`)' source='com.puppycrawl.tools.checkstyle.Lint/Syntax'/>
+  </file>
+</checkstyle>
