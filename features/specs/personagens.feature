@@ -9,7 +9,7 @@ Funcionalidade: Verificar o personsagem
   Cenario: Pesquisar o personagem por id
     Dado que digito o "<id>"
     Quando pesquiso o personagem
-    Then tenho acesso as informações do personagem com sucesso
+    Entao tenho acesso as informações do personagem com sucesso
 
     Exemplos:
     |id |

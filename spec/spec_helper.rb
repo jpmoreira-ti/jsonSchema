@@ -1,5 +1,4 @@
-frozen_string_literal: true
-
-def rick_morthy
-  API::RickMorthy.new
+# frozen_string_literal: true
+module Rest
+  def rick_morthy; API::Rest::RickMorthy.new end
 end

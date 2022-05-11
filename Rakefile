@@ -5,6 +5,7 @@ require 'cucumber/rake/task'
 
 desc 'Analisar código'
 task :rubocop do
+  clean_prj
   checklist = '-r rubocop/formatter/checkstyle_formatter'
   config = '-c .rubocop.yml'
   formatter = '-f RuboCop::Formatter::CheckstyleFormatter'
@@ -12,10 +13,9 @@ task :rubocop do
   system "rubocop #{checklist} #{config} #{formatter} #{output} -P"
 end
 
-desc 'Executar as features criticas sequencial'
+desc 'Executar os testes'
 task :tests do
-  clean_prj
-  sh 'bundle exec cucumber --format progress --format html --out report_test/teste.html'
+  system 'bundle exec cucumber --format progress --format html --out report/teste.html'
 end
 
 def clean_prj
