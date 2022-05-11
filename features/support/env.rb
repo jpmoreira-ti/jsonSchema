@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
-require 'fig_newton'
 require 'httparty'
 require 'openssl'
 require 'rake'
 require 'rspec'
 require 'json_matchers/rspec'
 require 'cucumber'
-require 'logger'
 require 'pry'
 require 'json'
 
