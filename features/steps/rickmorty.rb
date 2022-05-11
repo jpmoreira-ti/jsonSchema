@@ -1,12 +1,13 @@
 # frozen_string_literal: true
 
 Dado('que digito o {string}') do |id|
-  @rick = OpenStruct.new
+  @rick ||= OpenStruct.new
   @rick.id = id
 end
 
 Quando('pesquiso o personagem') do
-  @rick.response = API::Rest::RickMorthy.new.get_character(@rick.id) #rick_morthy.get_character(@rick.id)
+  # @rick.response = rick_morthy.get_character(@rick.id)
+  @rick.response = API::Rest::RickMorthy.new.get_character(@rick.id)
 rescue StandardError => e
   @rick.error = e
 end
