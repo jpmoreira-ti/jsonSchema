@@ -67,8 +67,7 @@
             "type": "string"
         },
         "episode": {
-            "type": "array",
-            "uniqueItems": false
+            "type": "array"
         },
         "url": {
             "type": "string"

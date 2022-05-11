@@ -8,6 +8,7 @@ module API
       base_uri URL['rickmorthy']
       headers 'Content-Type' => 'application/json'
       default_timeout 240
+      format :json
 
       def get_character(id)
         endpoint = ENDPOINT['character'].sub('{id}', id)
