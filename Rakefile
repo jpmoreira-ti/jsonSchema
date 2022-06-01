@@ -14,7 +14,7 @@ task :rubocop do
 end
 
 desc 'Executar os testes'
-task :json_schema_test do
+task :json_schema_tests do
   system 'bundle exec cucumber --format progress --format html --publish-quiet --out report/teste.html'
 end
 
