@@ -1,2 +1,5 @@
 # RICK_MORTHY
 character: /api/character/{id}
+
+# EMPLOYEES
+employees: /api/v1/employees

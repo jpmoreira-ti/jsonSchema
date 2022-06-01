@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "data": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 24,
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "employee_name": {
+              "type": "string",
+              "pattern": "^[a-zA-Z]+( [a-zA-Z]+)*$"
+            },
+            "employee_salary": {
+              "type": "integer"
+            },
+            "employee_age": {
+              "type": "integer"
+            },
+            "profile_image": {
+              "type": "string",
+              "enum": [
+                ""
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "employee_name",
+            "employee_salary",
+            "employee_age",
+            "profile_image"
+          ]
+        }
+      },
+      "message": {
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9!]+( [a-zA-Z0-9.]+)*$"
+      }
+    },
+    "required": [
+      "status",
+      "data",
+      "message"
+    ]
+  }

@@ -10,8 +10,8 @@ module API
       default_timeout 240
       format :json
 
-      def get_character(id)
-        endpoint = ENDPOINT['character'].sub('{id}', id)
+      def get_character
+        endpoint = ENDPOINT['character']
         self.class.get(endpoint, body: {})
       end
     end

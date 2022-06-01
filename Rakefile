@@ -15,7 +15,7 @@ end
 
 desc 'Executar os testes'
 task :tests do
-  system 'bundle exec cucumber --format progress --format html --out report/teste.html'
+  system 'bundle exec cucumber --format progress --format html --publish-quiet --out report/teste.html'
 end
 
 def clean_prj
