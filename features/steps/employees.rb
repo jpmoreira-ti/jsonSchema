@@ -12,7 +12,8 @@ end
 
 Entao('tenho acesso as informações de todos os empregados com sucesso') do
   response = @employees.response
-  Commons.logger(response.body)
+  puts JSON.pretty_generate(response.body)
+  # Commons.logger(response.body)
   expect(response.code).to eq 200
   expect(response.response.body).to match_response_schema(Commons.carrega_schema('employees'))
 end
