@@ -10,7 +10,7 @@ class Commons
     log.level = Logger::INFO
     log.formatter = proc do |severity, datetime, _progname, msg|
       date_format = datetime.strftime('%Y-%m-%d %H:%M:%S')
-      "#{JSON.dump(date: date_format.to_s, severity: severity.to_s, message: msg)}\\n"
+      "#{JSON.dump(date: date_format.to_s, severity: severity.to_s, message: msg)}"
     end
     log.info(param)
   end

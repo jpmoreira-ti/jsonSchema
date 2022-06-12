@@ -29,7 +29,7 @@
             "profile_image": {
               "type": "string",
               "enum": [
-                ""
+                "string"
               ]
             }
           },
