@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Dado('que desejo saber sobre todos os empregados') do
+Dado('que desejo saber sobre todos os empregados de uma unica vez') do
   @employees = OpenStruct.new
 end
 
