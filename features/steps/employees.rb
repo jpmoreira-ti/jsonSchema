@@ -12,7 +12,7 @@ end
 
 Entao('tenho acesso as informações de todos os empregados com sucesso') do
   response = @employees.response
-  Commons.logger(response.body)
+  Fac.print_log(response)
   expect(response.code).to eq 200
-  expect(response.response.body).to match_response_schema(Commons.carrega_schema('employees'))
+  expect(response.response.body).to match_response_schema(Fac.carrega_schema('employees'))
 end

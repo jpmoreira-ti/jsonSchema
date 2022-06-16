@@ -1,4 +1,6 @@
 # JSON SCHEMA TESTS
 
 Para executar, usar o comando
- - rake json_schema_tests
+ - rake 'tests[@tag]'
+   Ex: rake 'tests[@pesquisa_fatos]'
+   Ex: rake 'tests[@pesquisa_empregados]'
