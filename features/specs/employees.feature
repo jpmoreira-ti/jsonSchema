@@ -1,7 +1,7 @@
 #language:pt
 
 Funcionalidade: Pequisar empregado
- Eu como funciário do setor de RH
+ Como funciário do setor de RH
  Quero pesquisar as informações de um empregado
  Para obter todos os detalhes sobre o empregado
  

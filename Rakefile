@@ -13,14 +13,15 @@ task :rubocop do
   system "rubocop #{checklist} #{config} #{formatter} #{output} -P"
 end
 
-desc 'Executar os testes'
-task :tests_employees do
-  system 'bundle exec cucumber --format progress --format html -t @pesquisa_empregados --publish-quiet --out report/teste.html'
+desc 'Executar os testes utilizando tag'
+task :tests, [:tag] do |_task, args|
+  run_tests(args[:tag])
 end
 
-desc 'Executar os testes'
-task :tests_facts do
-  system 'bundle exec cucumber --format progress --format html -t @pesquisa_fatos --publish-quiet --out report/teste.html'
+def run_tests(tag)
+  puts '==================================  INICIO DO TESTE ==================================='
+  system "bundle exec cucumber --format progress --format html -t #{tag} --publish-quiet --out report/teste.html"
+  puts '==================================== FIM DO TESTE ====================================='
 end
 
 def clean_prj
