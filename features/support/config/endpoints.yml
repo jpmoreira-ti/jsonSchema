@@ -1,5 +1,5 @@
-# RICK_MORTHY
-character: /api/character/{id}
+# CAT_FACTS
+facts: /facts
 
 # EMPLOYEES
 employees: /api/v1/employees

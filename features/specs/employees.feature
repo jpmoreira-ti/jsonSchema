@@ -5,7 +5,7 @@ Funcionalidade: Pequisar empregado
  Quero pesquisar as informações de um empregado
  Para obter todos os detalhes sobre o empregado
  
-  @busca_personagem
+  @pesquisa_empregados
   Cenario: Pesquisar todos os empregados
     Dado que desejo saber sobre todos os empregados de uma unica vez
     Quando realizo a pesquisa de empregados

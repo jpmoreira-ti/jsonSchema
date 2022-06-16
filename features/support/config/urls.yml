@@ -1,5 +1,5 @@
 # RICK_MORTHY
-rickmorthy: 'https://rickandmortyapi.com'
+catfact: 'https://cat-fact.herokuapp.com'
 
 # EMPLOYEES
 employee: 'https://dummy.restapiexample.com'

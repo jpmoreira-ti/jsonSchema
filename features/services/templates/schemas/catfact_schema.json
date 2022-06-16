@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "object",
+        "properties": {
+          "verified": {
+            "type": "boolean",
+            "enum": [
+              true,
+              false
+            ]
+          },
+          "feedback": {
+            "type": "string"
+          },
+          "sentCount": {
+            "type": "integer",
+            "enum": [
+              1
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "verified",
+          "sentCount"
+        ]
+      },
+      "_id": {
+        "type": "string"
+      },
+      "user": {
+        "type": "string"
+      },
+      "text": {
+        "type": "string"
+      },
+      "__v": {
+        "type": "integer",
+        "enum": [
+          0
+        ]
+      },
+      "source": {
+        "type": "string",
+        "enum": [
+          "user"
+        ]
+      },
+      "updatedAt": {
+        "type": "string",
+        "pattern": "^[0-9:A-Z-.]*$"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "cat"
+        ]
+      },
+      "createdAt": {
+        "type": "string",
+        "pattern": "^[0-9:A-Z-.]*$"
+      },
+      "deleted": {
+        "type": "boolean"
+      },
+      "used": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": true,
+    "required": [
+      "status",
+      "_id",
+      "user",
+      "text",
+      "__v",
+      "source",
+      "updatedAt",
+      "type",
+      "createdAt",
+      "deleted",
+      "used"
+    ]
+  }
+}

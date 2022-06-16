@@ -14,8 +14,13 @@ task :rubocop do
 end
 
 desc 'Executar os testes'
-task :json_schema_tests do
-  system 'bundle exec cucumber --format progress --format html --publish-quiet --out report/teste.html'
+task :tests_employees do
+  system 'bundle exec cucumber --format progress --format html -t @pesquisa_empregados --publish-quiet --out report/teste.html'
+end
+
+desc 'Executar os testes'
+task :tests_facts do
+  system 'bundle exec cucumber --format progress --format html -t @pesquisa_fatos --publish-quiet --out report/teste.html'
 end
 
 def clean_prj
