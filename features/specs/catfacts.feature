@@ -4,6 +4,8 @@ Funcionalidade: Pequisar fatos sobre gatos
  Como petlover
  Quero pesquisar fatos sobre gatos
  Para obter mais conhecimento sobre gatos
+
+ Swagger: "https://petstore.swagger.io"
  
   @pesquisa_fatos
   Cenario: Pesquisar fatos sobre gatos
