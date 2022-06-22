@@ -1,5 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "texto": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  },
   "type": "array",
   "minItems": 1,
   "maxItems": 5,
@@ -33,10 +41,10 @@
         ]
       },
       "_id": {
-        "type": "string"
+        "$ref": "#/definitions/texto"
       },
       "user": {
-        "type": "string"
+        "$ref": "#/definitions/texto"
       },
       "text": {
         "type": "string",
@@ -69,13 +77,13 @@
         "pattern": "^[0-9:A-Z.-]*$"
       },
       "deleted": {
-        "type": "boolean"
+        "$ref": "#/definitions/status"
       },
       "used": {
-        "type": "boolean"
+        "$ref": "#/definitions/status"
       }
     },
-    "additionalProperties": false,
+    "additionalProperties": true,
     "required": [
       "status",
       "_id",
