@@ -1,11 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "definitions": {
-    "texto": {
+    "mensagens": {
       "type": "string"
     },
     "status": {
       "type": "boolean"
+    },
+    "data": {
+      "type": "string",
+      "pattern": "^[0-9:A-Z.-]*$"
     }
   },
   "type": "array",
@@ -41,10 +45,10 @@
         ]
       },
       "_id": {
-        "$ref": "#/definitions/texto"
+        "$ref": "#/definitions/mensagens"
       },
       "user": {
-        "$ref": "#/definitions/texto"
+        "$ref": "#/definitions/mensagens"
       },
       "text": {
         "type": "string",
@@ -63,8 +67,7 @@
         ]
       },
       "updatedAt": {
-        "type": "string",
-        "pattern": "^[0-9:A-Z.-]*$"
+        "$ref": "#/definitions/data"
       },
       "type": {
         "type": "string",
@@ -73,8 +76,7 @@
         ]
       },
       "createdAt": {
-        "type": "string",
-        "pattern": "^[0-9:A-Z.-]*$"
+        "$ref": "#/definitions/data"
       },
       "deleted": {
         "$ref": "#/definitions/status"

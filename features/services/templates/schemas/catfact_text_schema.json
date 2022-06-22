@@ -1,8 +1,0 @@
-{
-  "definitions": {
-    "regex": {
-      "type": "string",
-      "pattern": "^[ '\"'a-z0-9A-Z:,?.-]*$"
-    }
-  }
-}
