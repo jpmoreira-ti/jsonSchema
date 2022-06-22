@@ -2,12 +2,11 @@
   "$schema": "https://json-schema.org/draft-07/schema",
   "title": "Root Schema",
   "type": "array",
-  "minItems":1,
-  "maxItems":5,
   "items": {
       "title": "A Schema",
       "type": "object",
       "required": [
+          "status",
           "_id",
           "user",
           "text",
@@ -32,11 +31,7 @@
               "properties": {
                   "verified": {
                       "title": "The verified Schema",
-                      "type": "boolean",
-                      "enum": [
-                        true,
-                        false
-                      ]
+                      "type": "boolean"
                   },
                   "sentCount": {
                       "title": "The sentCount Schema",
@@ -54,8 +49,7 @@
           },
           "text": {
               "title": "The text Schema",
-              "type": "string",
-              "pattern": "^[ '\"'a-z0-9A-Z:,?.-]*$"
+              "type": "string"
           },
           "__v": {
               "title": "The __v Schema",
@@ -75,8 +69,7 @@
           },
           "createdAt": {
               "title": "The createdAt Schema",
-              "type": "string",
-              "pattern": "^[0-9:A-Z.-]*$"
+              "type": "string"
           },
           "deleted": {
               "title": "The deleted Schema",
