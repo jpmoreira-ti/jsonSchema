@@ -84,7 +84,8 @@
                         "additionalProperties": true,
                         "properties": {
                             "name": {
-                                "type": "string"
+                                "type": "string",
+                                "pattern": "^[a-zA-Z (A-Z-0-9)]*$"
                             },
                             "url": {
                                 "type": "string"
@@ -120,13 +121,8 @@
                         "type": "string"
                     },
                     "created": {
-                        "patternProperties": {
-                            "^[a-zA-Z0-9]*$":{
-                                "properties": {
-                                      "created":{"type":"string"}
-                                 }
-                            }
-                        }
+                        "type": "string",
+                        "pattern": "^[0-9:A-Z.-]*$"
                     }
                 }
             }
