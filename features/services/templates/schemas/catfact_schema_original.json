@@ -1,0 +1,97 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "type": "object",
+    "required": [
+        "current_page",
+        "data",
+        "first_page_url",
+        "from",
+        "last_page",
+        "last_page_url",
+        "links",
+        "next_page_url",
+        "path",
+        "per_page",
+        "prev_page_url",
+        "to",
+        "total"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "current_page": {
+            "type": "number"
+        },
+        "data": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "fact",
+                    "length"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                    "fact": {
+                        "type": "string"
+                    },
+                    "length": {
+                        "type": "number"
+                    }
+                }
+            }
+        },
+        "first_page_url": {
+            "type": "string"
+        },
+        "from": {
+            "type": "number"
+        },
+        "last_page": {
+            "type": "number"
+        },
+        "last_page_url": {
+            "type": "string"
+        },
+        "links": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "url",
+                    "label",
+                    "active"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                    "url": {
+                        "type": "null"
+                    },
+                    "label": {
+                        "type": "string"
+                    },
+                    "active": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        "next_page_url": {
+            "type": "string"
+        },
+        "path": {
+            "type": "string"
+        },
+        "per_page": {
+            "type": "string"
+        },
+        "prev_page_url": {
+            "type": "null"
+        },
+        "to": {
+            "type": "number"
+        },
+        "total": {
+            "type": "number"
+        }
+    }
+}

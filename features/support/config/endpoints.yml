@@ -1,5 +1,8 @@
 # CAT_FACTS
-facts: /facts
+facts: /facts?limit=1&max_length=140
 
 # EMPLOYEES
 employees: /api/v1/employees
+
+# RICK AND MORTY
+morty: /api/character/?page=1
