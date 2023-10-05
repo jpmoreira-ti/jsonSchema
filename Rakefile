@@ -3,7 +3,7 @@
 require 'cucumber'
 require 'cucumber/rake/task'
 
-desc 'Analisar código'
+desc 'Analisar Código'
 task :rubocop do
   clean_prj
   checklist = '-r rubocop/formatter/checkstyle_formatter'
