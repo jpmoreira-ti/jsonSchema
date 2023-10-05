@@ -1,6 +1,6 @@
 #language:pt
 
-Funcionalidade: Pequisar fatos sobre gatos
+Funcionalidade: Pesquisar Fatos sobre gatos
  Como petlover
  Quero pesquisar fatos sobre gatos
  Para obter mais conhecimento sobre gatos
