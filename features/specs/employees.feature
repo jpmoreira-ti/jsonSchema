@@ -1,6 +1,6 @@
 #language:pt
 
-Funcionalidade: Pequisar empregado
+Funcionalidade: Pequisar Empregado
  Como funciário do setor de RH
  Quero pesquisar as informações de um empregado
  Para obter todos os detalhes sobre o empregado
