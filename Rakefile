@@ -13,7 +13,7 @@ task :rubocop do
   system "rubocop #{checklist} #{config} #{formatter} #{output} -P"
 end
 
-desc 'Executar os testes utilizando tag'
+desc 'Executar os testes utilizando Tag'
 task :tests, [:tag] do |_task, args|
   run_tests(args[:tag])
 end
